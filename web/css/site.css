@@ -1,0 +1,313 @@
+html,
+body {
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* jabin layout css */
+.nav-top-main {
+    background-color: #555;
+    position: fixed;
+    top: 0;left: 0;
+    padding-left: 200px;
+    width: 100%;
+    height: 60px;
+    line-height: 57px;
+    border-bottom: 1px solid #ddd;
+    color: white;
+    font-size: 16px;
+    z-index: 99;
+}
+.nav-top-main .toggle-sidebar {
+    display: block;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.nav-top-main a {
+    color: white;
+    padding: 0 15px;
+}
+.side-bar-main {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;bottom: 0;
+    background-color: #444;
+    overflow-y: auto;
+    z-index: 999;
+    overflow:-moz-scrollbars-none;
+    scrollbar-width: none;
+}
+.side-bar-main::-webkit-scrollbar {
+    display: none;
+}
+.bread-header {
+    height: 60px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.side-bar-main li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.side-bar-menu {
+    padding: 15px 0;
+}
+.side-bar-menu ul {
+    padding: 0;
+    margin: 0;
+}
+.side-bar-menu > li {
+    margin: 3px 0;
+}
+.side-bar-menu  li > a {
+    display: block;
+    padding: 3px 0 3px 10px;
+    position: relative;
+    color: #ccc;
+}
+.side-bar-menu li.active > a {
+    color: white;
+    font-weight: bold;
+}
+.side-bar-menu > li.active.nav-parent > a {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(14, 123, 185);
+}
+.side-bar-menu li.active > a::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: .7rem;
+    height: 5px;width: 5px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+.side-bar-menu .nav-children {
+    background-color: #666;
+    padding: 3px 0;
+    display: none;
+}
+.side-bar-menu .nav-parent.active .nav-children {
+    display: block;
+}
+.side-bar-menu .nav-children > li {
+    padding-left: 20px;
+}
+
+
+.content-main {
+    padding-left: 200px;
+    padding-top: 60px;
+}
+.content-main .content {
+    padding: 15px;
+}
+/* end layout */
+
+/* size */
+.my-1 {
+    margin: 0.6em auto;
+}
+.my-2 {
+    margin: 1em auto;
+}
+.my-3 {
+    margin: 2em auto;
+}
+.my-4 {
+    margin: 3em auto;
+}
+.mt-1 {
+    margin-top: 0.6em;
+}
+.mt-2 {
+    margin-top: 1em;
+}
+.mt-3 {
+    margin-top: 2em;
+}
+.mt-4 {
+    margin-top: 3em;
+}
+.py-1 {
+    padding: 0.6em 0;
+}
+.py-2 {
+    padding: 1em 0;
+}
+.py-3 {
+    padding: 2em 0;
+}
+.py-4 {
+    padding: 3em 0;
+}
+
+
+/* width sizing */
+.w-25 {
+    width: 25%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-90 {
+    width: 90%;
+}
+.w-100 {
+    width: 100%;
+}
+.w-auto {
+    width: auto;
+}
+/* float */
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+/* spacing */
+.auto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*redactor*/
+.redactor-box {
+    height: 400px;
+}
+/*表单初始化*/
+input[type='radio'] {
+    margin-left: 20px;
+}
+/* table { */
+    /* table-layout: fixed; */
+/* } */
+/* table td { */
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+/* } */
+
+.breadcrumb {
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+.bold {
+    font-weight: bold;
+}
+
+.summary{
+    padding: 10px 0
+}
+
+.input-auto-uploadimg-preview{
+    margin: 10px 0;
+}
